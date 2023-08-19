@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Social Media Downloader</title>
+</head>
+<body>
+  <h1>Social Media Downloader</h1>
+  <form action="/download" method="post">
+    <input type="text" name="url" placeholder="Enter the URL of the social media post">
+    <select name="format">
+      <option value="mp4">MP4</option>
+      <option value="webm">WebM</option>
+      <option value="ogg">OGG</option>
+      <option value="3gp">3GP</option>
+      <option value="flv">FLV</option>
+    </select>
+    <input type="submit" value="Download">
+  </form>
+
+  <!-- This directive includes the download.py file -->
+  <include src="index.py"></include>
+</body>
+</html>
